@@ -1,0 +1,4 @@
+# Strip execution outputs for active notebooks when nbstripout is enabled.
+*.ipynb filter=nbstripout
+# The two supplied course notebooks are archival, preserve them byte-for-byte in Git.
+notebooks/reference/*.ipynb -filter

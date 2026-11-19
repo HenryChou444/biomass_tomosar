@@ -1,0 +1,36 @@
+# Python environment and generated caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.build/
+dist/
+
+# Personal configuration
+config/local.toml
+.env
+
+# Raw radar data and generated outputs — do not commit
+/data/*
+!/data/README.md
+/outputs/*
+!/outputs/README.md
+*.tif
+*.tiff
+*.rat
+*.nc
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.zarr/
+*.zip
+*.SAFE/
+
+# IDE and OS noise
+.vscode/
+.DS_Store
+Thumbs.db

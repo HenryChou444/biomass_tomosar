@@ -1,0 +1,8 @@
+# Copy to config/local.toml and edit for YOUR computer.
+# Paths may be absolute (e.g. D:/datasets/BIOMASS_STACK or
+# /mnt/d/datasets/BIOMASS_STACK) or relative to the repository root.
+# Do not commit local.toml.
+
+[paths]
+biomass_stack = "data/BIOMASS_STACK"
+mondah = "data/mondah"
