@@ -12,6 +12,7 @@ dependencies = [
     "netCDF4>=1.6",
     "lxml>=5.0",
     "gdal[numpy]==3.8.4",
+    "pandas>=3.0.6",
 ]
 
 [dependency-groups]

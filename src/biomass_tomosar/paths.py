@@ -12,10 +12,13 @@ def get_data_path(key: str, default: str) -> Path:
     if CONFIG_FILE.exists():
         with CONFIG_FILE.open("rb") as f:
             settings = tomllib.load(f)
+
     raw_value = settings.get("paths", {}).get(key, default)
     path = Path(raw_value).expanduser()
+
     if not path.is_absolute():
         path = PROJECT_ROOT / path
+
     return path.resolve()
 
 
@@ -23,5 +26,9 @@ def biomass_stack_dir() -> Path:
     return get_data_path("biomass_stack", "data/BIOMASS_STACK")
 
 
-def mondah_dir() -> Path:
-    return get_data_path("mondah", "data/mondah")
+def processed_data_dir() -> Path:
+    return get_data_path("processed_data", "data/processed")
+
+
+def gedi_data_dir() -> Path:
+    return get_data_path("gedi_data", "data/gedi")
