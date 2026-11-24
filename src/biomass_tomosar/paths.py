@@ -32,3 +32,6 @@ def processed_data_dir() -> Path:
 
 def gedi_data_dir() -> Path:
     return get_data_path("gedi_data", "data/gedi")
+
+def outputs_dir() -> Path:
+    return get_data_path("outputs", "outputs")
